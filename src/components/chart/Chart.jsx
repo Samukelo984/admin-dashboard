@@ -1,14 +1,11 @@
 import "./Chart.scss";
 import {
-  LineChart,
-  Line,
   AreaChart,
   XAxis,
   Area,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
