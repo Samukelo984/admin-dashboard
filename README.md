@@ -2,7 +2,7 @@
 
 This project was created to demonstrate Material 5 UI & SASS capabilities.
 
-Link to project:
+Link to project: https://mlsm-admin-dashboard.netlify.app/
 
 ## On Repository Clone:
 
