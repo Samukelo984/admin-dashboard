@@ -1,0 +1,63 @@
+.data-table {
+  height: 37.5rem;
+  padding: 1.2em;
+
+  .cellw-img {
+    display: flex;
+    align-items: center;
+
+    .cell-img {
+      width: 2.1rem;
+      height: 2.1rem;
+      margin: 1.2em;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .cellw-status {
+    padding: 0.3em;
+    border-radius: 0.3rem;
+
+    &.active {
+      color: white;
+      background-color: lime;
+    }
+
+    &.pending {
+      color: white;
+      background-color: gold;
+    }
+
+    &.passive {
+      color: white;
+      background-color: red;
+    }
+  }
+
+  .cell-action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .view-btn {
+      padding: 0.2em 0.3em;
+      border-radius: 0.3rem;
+      border: none;
+      color: purple;
+      border: 1px dotted purple;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      padding: 0.2em 0.3em;
+      border: none;
+      border-radius: 0.3rem;
+      color: crimson;
+      border: 1px dotted crimson;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+}
