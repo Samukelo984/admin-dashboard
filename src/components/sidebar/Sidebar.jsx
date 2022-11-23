@@ -1,4 +1,5 @@
 import "./Sidebar.scss";
+import { Link } from "react-router-dom";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import StoreIcon from "@mui/icons-material/Store";
@@ -16,28 +17,38 @@ const Sidebar = () => {
   return (
     <section className="sidebar">
       <article className="top">
-        <h2 className="logo">myadmin</h2>
+        <Link to="/">
+          <h2 className="logo">myadmin</h2>
+        </Link>
       </article>
       <hr />
       <article className="center">
         <ul>
           <p className="title">MAIN</p>
           <li>
-            <DashboardIcon className="side-icon" />
-            <span>Dashboard</span>
+            <Link>
+              <DashboardIcon className="side-icon" />
+              <span>Dashboard</span>
+            </Link>
           </li>
           <p className="title">LISTS</p>
           <li>
-            <PersonOutlineOutlinedIcon className="side-icon" />
-            <span>Users</span>
+            <Link to="/users">
+              <PersonOutlineOutlinedIcon className="side-icon" />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
-            <StoreIcon className="side-icon" />
-            <span>Products</span>
+            <Link to="/products">
+              <StoreIcon className="side-icon" />
+              <span>Products</span>
+            </Link>
           </li>
           <li>
-            <CreditCardIcon className="side-icon" />
-            <span>Orders</span>
+            <Link>
+              <CreditCardIcon className="side-icon" />
+              <span>Orders</span>
+            </Link>
           </li>
           <li>
             <LocalShippingIcon className="side-icon" />
