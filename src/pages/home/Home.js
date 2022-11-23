@@ -20,7 +20,7 @@ const Home = () => {
         </article>
         <article className="charts">
           <FeaturedChart />
-          <Chart />
+          <Chart aspect={2 / 1} title="Last 6 Months Revenue" />
         </article>
         <article className="list">
           <span>Latest Transactions</span>

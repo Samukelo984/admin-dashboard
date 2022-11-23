@@ -1,0 +1,101 @@
+.single {
+  width: 100%;
+  display: flex;
+
+  .single-container {
+    flex: 6;
+
+    .top {
+      padding: 1.4em;
+      display: flex;
+      gap: 1.2rem;
+
+      .left {
+        position: relative;
+        flex: 1;
+        padding: 1.2em;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+          rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+          rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        border-radius: 0.2rem;
+
+        button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 0.3em;
+          margin: 0.2em;
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: #fff;
+          background-color: #7451f8;
+          border: none;
+          border-radius: 0.2rem;
+          cursor: pointer;
+        }
+
+        h1 {
+          margin-bottom: 1.2em;
+          font-size: 1rem;
+          font-weight: 700;
+          color: gray;
+        }
+
+        .item {
+          display: flex;
+          gap: 1.2rem;
+
+          img {
+            width: 6.2rem;
+            height: 6.2rem;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+
+          .details {
+            h1 {
+              margin-bottom: 0.6em;
+              font-size: 1.6rem;
+              color: #555;
+            }
+
+            .details-item {
+              margin-bottom: 0.6em;
+              font-size: 0.9rem;
+
+              .item-key {
+                margin-right: 0.4em;
+                font-weight: 700;
+                color: gray;
+              }
+
+              .item-value {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+      }
+    }
+
+    .btm {
+      padding: 1.2em;
+      margin: 0.6em 1.2em;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+        rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+        rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 0.2rem;
+
+      h1 {
+        margin-bottom: 1.2em;
+        font-size: 1rem;
+        font-weight: 700;
+        color: gray;
+      }
+    }
+  }
+}
